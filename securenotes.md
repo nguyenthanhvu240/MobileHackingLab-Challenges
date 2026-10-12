@@ -204,6 +204,7 @@ adb shell content query \
   --uri content://com.mobilehackinglab.securenotes.secretprovider/ \
   --where "pin=2580"
 ```
+<img width="758" height="100" alt="42095224-ac70-4fdf-b9cf-8d3448474e3b-1791617989531_image" src="https://github.com/user-attachments/assets/eef1ebe8-64bb-41a9-b31a-0c328cf365a7" />
 
 ![Content query result showing the flag](images/1.png)
 
@@ -220,10 +221,13 @@ Row: 0 Secret=CTF{D1d_y0u_gu3ss_1t!1?}
 Entering a wrong PIN:
 
 ![App showing incorrect PIN error](images/2.png)
+<img width="354" height="720" alt="f4957334-881a-41c7-9955-129e86274655-1791618024399_image" src="https://github.com/user-attachments/assets/af6a3d66-caca-4da4-a689-ff9a73b05c41" />
 
 Entering the correct PIN:
 
 ![App showing the decrypted flag](images/3.png)
+![Uploading f4957334-881a-41c7-9955-129e86274655-1791618024399_image.png…]()
+<img width="350" height="720" alt="07acf9c2-19b6-4870-abdd-faae813eea38-1791618058048_image" src="https://github.com/user-attachments/assets/64d5dfd6-97d1-44e1-8813-e7c82be72696" />
 
 ---
 
